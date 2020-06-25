@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fernando Mele</title>
+
+    <!--BOOTSRAP CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+
+<body>
+
+
+    <!--NAVEGACION-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-expand-md sticky-top navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">
+                <h3>FERNANDO MELE</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sobre mí
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Información personal</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Formación académica</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#experiencia-laboral">Experiencia laboral</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Podcasts
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Biografías</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Historias de canciones</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contacto<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </nav>
+    </div>
+    <!--FOTO DE PORTADA-->
+    <header>
+        <div class="container-fluid">
+            <div class="portada">
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--PODCASTS-->
+
+
+
+    <!--CURRICULUM-->
+    <hr color="white">
+    <div class="container-fluid">
+        <!--Contenedor general-->
+        <div class="row">
+            <!--Información personal-->
+            <div class="col-lg-3 col-md-3 col-sm-12 justify-content-center">
+                <button type="button" class="btn btn-outline-light p-3" style="width: 100%" data-toggle="collapse"
+                    data-target="#info-pe" aria-expanded="false" aria-controls="info-pe">
+                    DATOS PERSONALES
+                </button>
+                <div class="collapse" id="info-pe">
+                    <div class="card card-body bg-transparent">
+                        <p>
+                            <u class="lead">Fecha de nacimiento:</u>
+                            <br>
+                            8 de noviembre de 1990.
+                            <br>
+                            <br>
+                            <u class="lead">Lugar de nacimiento:</u>
+                            <br>
+                            La Plata, Buenos Aires, Argentina.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Formación académica-->
+            <div class="col-lg-4 col-md-4 col-sm-12 justify-content-center">
+                <button type="button" class="btn btn-outline-light p-3" style="width: 100%" data-toggle="collapse"
+                    data-target="#form-ac" aria-expanded="false" aria-controls="form-ac">
+                    FORMACIÓN ACADÉMICA
+                </button>
+                <div class="collapse" id="form-ac">
+                    <div class="card card-body bg-transparent">
+                        <h4> UNIVERSIDAD NACIONAL <br>DE LA PLATA
+
+                        </h4>
+                        <br>
+                        <br>
+                        <h5>
+                            FACULTAD DE PERIODISMO<br> Y COMUNICACIÓN SOCIAL
+                        </h5>
+                        <br>
+                        <h6>
+                            <p class="lead"> <u>
+                                    LICENCIADO EN COMUNICACIÓN SOCIAL</u> (orientación Periodismo)
+                            </p>
+                        </h6>
+                        <p> Finalizado en abril de 2020.</p>
+                        <p> <u>Promedio:</u> 8.28</p>
+
+                        <hr color="white">
+
+                        <h6>
+                            <p class="lead"> <u>
+                                    TÉCNICO SUPERIOR UNIVERSITARIO EN PERIODISMO DEPORTIVO
+                                </u>
+                            </p>
+
+                        </h6>
+                        <p> Finalizado en diciembre de 2016.</p>
+                        <p> <u>Promedio:</u> 8.23</p>
+
+                        <hr color="white">
+                        <p font-size=-2>
+                            -Ayudante adscripto de la materia <i>Periodismo Deportivo 1</i>,
+                            dictada por el Lic. Osvaldo Fanjul. De 2014 a 2017.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Experiencia laboral-->
+            <div class="col-lg-5 col-md-5 col-sm-12 justify-content-center" data-toggle="collapse"
+                data-target="#expe-la" aria-expanded="false" aria-controls="expe-la">
+                <button type="button" class="btn btn-outline-light p-3 text-center" style="width: 100%">
+                    EXPERIENCIA LABORAL
+                </button>
+                <div class="collapse" id="expe-la">
+                    <div class="card card-body bg-transparent">
+                        <p><u>
+                                <h6 class="lead">Co-conducción programa radial El Buscador</h6>
+                            </u></p>
+
+                        <p>Radio La Redonda, FM100.3. La Plata.</p>
+                        <p>Desde junio de 2009 hasta la actualidad.</p>
+                        <p><i>Premio Martín Fierro Federal a Mejor programa de entretenimiento en radio 2017</i></p>
+
+                        <hr color="white">
+
+                        <p><u>
+                                <h6 class="lead">Conducción y producción general programa televisivo "A tu salud"</h6>
+                            </u></p>
+
+                        <p>Canal de cable Somos La Plata, Berisso y Ensenada.</p>
+                        <p>Desde mayo de 2015 hasta la actualidad.</p>
+
+                        <hr color="white">
+
+                        <p><u>
+                                <h6 class="lead">Columnista en programas "Civilización y Barbarie" y "El Informador"
+                                </h6>
+                            </u></p>
+
+                        <p>Radio La Redonda, FM100.3. La Plata.</p>
+                        <p>Desde febrero 2016 hasta diciembre 2019.</p>
+                        <p><u>Temática:</u> Biografías de personajes célebres. <i>Podcast: "Biografías por Fernando
+                                Mele"</i>
+                        </p>
+
+                        <hr color="white">
+
+                        <p><u>
+                                <h6 class="lead"> Panelista en programa radial "Vestuario del domingo"
+                                </h6>
+                            </u></p>
+
+                        <p>Radio La Redonda, FM100.3. La Plata.</p>
+                        <p>Desde febrero de 2013 hasta diciembre de 2015.</p>
+
+                        <hr color="white">
+
+                        <p><u>
+                                <h6 class="lead">
+                                    Panelista de noticias en programa televisivo "Somos la tarde"
+                                </h6>
+                            </u></p>
+
+                        <p>Canal de cable Somos La Plata, Berisso y Ensenada.</p>
+                        <p>Desde mayo de 2013 hasta septiembre de 2014.</p>
+
+                        <hr color="white">
+
+                        <p><u>
+                                <h6 class="lead">Cronista de deportes</h6>
+                            </u></p>
+                        <p>Cool Radio, FM103.7, La Plata.</p>
+                        <p>Desde agosto de 2012 hasta marzo de 2013</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr color="white">
+
+
+
+    <!--CONTACTO-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--BOOTRSRAP JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
