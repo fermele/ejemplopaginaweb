@@ -21,7 +21,7 @@
 
     <!--NAVEGACION-->
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-expand-md sticky-top navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-expand-md  navbar-dark bg-dark">
             <a class="navbar-brand" href="/">
                 <h3>FERNANDO MELE</h3>
             </a>
@@ -80,62 +80,57 @@
 
 
 
+    <div class="container-fluid border-top border-bottom border-info display-4"
+        style="color: white; text-align: center; background-color: black; padding-top: 15px; padding-bottom: 15px; font-size: xx-large;">
+        PODCASTS
+    </div>
+
     <!--PODCASTS-->
-    <hr color="white">
-    <div class="container-fluid">
+
+    <div class="container-fluid" style="padding-top: 10px; padding-bottom: 10px;">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-1">
                 <button type="button" class="btn btn-outline-light p-3" style="width: 100%" data-toggle="collapse"
                     data-target="#biografias" aria-expanded="false" aria-controls="biografias">
-                    BIOGRAFÍAS
+                    <b>BIOGRAFÍAS</b>
                 </button>
                 <div class="collapse" id="biografias">
-                    <div class="card card-body bg-transparent">
-                        Audios de todas las biografías
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6-lg-6 col-md-6 col-sm-12">
-                <button type="button" class="btn btn-outline-light py-3" style="width: 100%" data-toggle="collapse"
-                    data-target="#historias-canciones" aria-expanded="false" aria-controls="historias-canciones">
-                    HISTORIAS DE CANCIONES
-                </button>
-                <div class="collapse" id="historias-canciones">
-                    <div class="card card-body bg-transparent">
+                    <div class="card card-body bg-transparent mt-2 mb-2">
 
 
 
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel interval=false">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <iframe
-                                        src="https://anchor.fm/fernando-mele/embed/episodes/Here-comes-the-sun---The-Beatles-eefp4t"
-                                        height="100px" width="80%" frameborder="0" scrolling="no"></iframe>
-                                </div>
-                                <div class="carousel-item">
-                                    <iframe
-                                        src="https://anchor.fm/fernando-mele/embed/episodes/Satisfaction---The-Rolling-Stones-eeguks"
-                                        height="100px" width="80%" frameborder="0" scrolling="no"></iframe>
-                                </div>
-                                <div class="carousel-item">
-                                    <iframe
-                                        src="https://anchor.fm/fernando-mele/embed/episodes/YMCA---Village-People-eegunm"
-                                        height="100px" width="80%" frameborder="0" scrolling="no"></iframe>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="list-group" id="list-tab" role="tablist">
+                                    <a class="list-group-item list-group-item-action list-group-item-dark"
+                                        id="list-home-list" data-toggle="list" href="#list-home" role="tab"
+                                        aria-controls="home">Home</a>
+                                    <a class="list-group-item list-group-item-action list-group-item-dark"
+                                        id="list-profile-list" data-toggle="list" href="#list-profile" role="tab"
+                                        aria-controls="profile">Stand
+                                        by me</a>
+                                    <a class="list-group-item list-group-item-action list-group-item-dark"
+                                        data-toggle="list" href="#list-messages" role="tab"
+                                        aria-controls="messages">Messages</a>
+                                    <a class="list-group-item list-group-item-action list-group-item-dark"
+                                        data-toggle="list" href="#list-settings" role="tab"
+                                        aria-controls="settings">Settings</a>
                                 </div>
                             </div>
-                            <div class="align-items-center">
-                                <a class="carousel-control-prev align-middle" href="#carouselExampleControls"
-                                    role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Anterior</span>
-                                </a>
+                            <div class="col-8">
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                        aria-labelledby="list-home-list">...</div>
+                                    <div class="tab-pane" id="list-profile" role="tabpanel"
+                                        aria-labelledby="list-profile-list"><iframe
+                                            src="https://anchor.fm/fernando-mele/embed/episodes/Stand-by-me---Ben-E--King-efiuuq"
+                                            height="102px" width="100%" frameborder="0" scrolling="no"></iframe></div>
+                                    <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                        aria-labelledby="list-messages-list">...</div>
+                                    <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                        aria-labelledby="list-settings-list">...</div>
+                                </div>
                             </div>
-                            <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
                         </div>
 
 
@@ -159,16 +154,52 @@
 
 
 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <button type="button" class="btn btn-outline-light py-3" style="width: 100%" data-toggle="collapse"
+                    data-target="#historias-canciones" aria-expanded="false" aria-controls="historias-canciones">
+                    <b>HISTORIAS DE CANCIONES</b>
+                </button>
+                <div class="collapse" id="historias-canciones">
+                    <div class="card card-body bg-transparent  mt-3 mb-1">
 
 
+                        <!--CAROUSEL-->
+                        <div id="carouselExampleControls" class="carousel slide container-fluid" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <iframe
+                                        src="https://anchor.fm/fernando-mele/embed/episodes/Here-comes-the-sun---The-Beatles-eefp4t"
+                                        height="104px" width="85%" frameborder="0" scrolling="no"></iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe
+                                        src="https://anchor.fm/fernando-mele/embed/episodes/Satisfaction---The-Rolling-Stones-eeguks"
+                                        height="104px" width="85%" frameborder="0" scrolling="no"></iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe
+                                        src="https://anchor.fm/fernando-mele/embed/episodes/YMCA---Village-People-eegunm"
+                                        height="104px" width="85%" frameborder="0" scrolling="no"></iframe>
+                                </div>
+                            </div>
 
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Prev</span>
+                            </a>
 
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
 
-
-
-
-
-
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
 
 
 
